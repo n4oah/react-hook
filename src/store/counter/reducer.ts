@@ -22,7 +22,7 @@ export const reducer = createReducer<CounterType, CounterActionType>(initialStat
   [COUNT_CHANGE]: (state, action) => {
     return {
       ...state,
-      counter: action.payload.counter
+      counter: action.payload
     };
   }
 });
