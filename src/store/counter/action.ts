@@ -6,11 +6,11 @@ export const COUNT_CHANGE = `count/CHANGE_COUNTER`;
 
 export const increment = createAction(COUNT_PLUS)();
 export const decrement = createAction(COUNT_MINUS)();
-// export const changeCounter = createAction(COUNT_CHANGE)<number>();
+export const changeCounter = createAction(COUNT_CHANGE)<number>();
 /*
-export const changeCounter = createAction(COUNT_CHANGE)();
-*/
+// payload 데이터를 변경가능
 export const changeCounter = createAction(
   COUNT_CHANGE,
   (counter) => ({ counter: counter })
 )();
+*/

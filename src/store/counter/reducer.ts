@@ -1,6 +1,5 @@
 import { createReducer } from 'typesafe-actions';
 import { CounterType, CounterActionType } from './types';
-// import { increment, decrement, changeCounter } from './action';
 import { COUNT_CHANGE, COUNT_PLUS, COUNT_MINUS } from './action'
 
 const initialState: CounterType = {
