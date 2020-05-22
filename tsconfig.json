@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "typeRoots": ["./node_modules/@types"],
     "target": "es6",
     "lib": [
       "dom",
@@ -17,9 +18,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "sourceMap": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["./src/**/*"],
+  "exclude": ["**/*.spec.ts", "node_modules"]
 }
