@@ -8,7 +8,7 @@ export const increment = createAction(COUNT_PLUS)();
 export const decrement = createAction(COUNT_MINUS)();
 export const changeCounter = createAction(COUNT_CHANGE)<number>();
 /*
-// payload 데이터를 변경가능
+// payload 데이터를 임의로 변경가능
 export const changeCounter = createAction(
   COUNT_CHANGE,
   (counter) => ({ counter: counter })

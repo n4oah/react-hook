@@ -12,15 +12,15 @@ function About() {
 
   const onIncrement = () => {
     dispatch(increment());
-  }
+  };
 
   const onDecrement = () => {
     dispatch(decrement());
-  }
+  };
 
   const setCount = () => {
     dispatch(changeCounter(counter));
-  }
+  };
 
   return (
     <div>

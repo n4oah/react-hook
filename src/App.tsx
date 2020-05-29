@@ -3,10 +3,15 @@ import { Link } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div>
-      ㅇㅇ
-      <Link to="/about">about 페이지로</Link>
-    </div>
+    <>
+      <span>ㅇㅇ</span>
+      <div>
+        <Link to="/about">about 페이지로 (redux hook)</Link>
+      </div>
+      <div>
+        <Link to="/about/redux-saga-exam">redux-saga-exam</Link>
+      </div>
+    </>
   );
 }
 
