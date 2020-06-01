@@ -15,3 +15,20 @@ export interface AccountType extends AccountSiginType {
   gender: Gender,
   email?: string
 };
+
+type AccountT = AccountSiginType | AccountType;
+export interface Account {
+  account?: AccountT,
+  status: string
+}
+
+const b: Account = {
+  status: 'a',
+  account: {
+    gender: Gender.male,
+    id: '1',
+    name: '1',
+    pwd: '1',
+    email: '1'
+  }
+};

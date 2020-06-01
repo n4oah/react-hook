@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AccountSiginType } from '../store/account/types';
 import { useDispatch } from 'react-redux';
-import { signIn } from '../store/account/action'
+import { signRequest } from '../store/account/action'
 
 function ReduxSagaExam() {
   // const count = useSelector((state: RootState) => state.counter.counter);
@@ -12,7 +12,7 @@ function ReduxSagaExam() {
   });
 
   const onSiginIn = () => {
-    dispatch(signIn(siginInAccount));
+    dispatch(signRequest(siginInAccount));
   };
 
   return (
